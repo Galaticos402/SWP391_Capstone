@@ -45,9 +45,9 @@ public class CustomerDAO {
         return false;
     }
     
-    public Customer getCustomerById(int id){
+    public Customer getCustomerByEmail(String email){
         try{
-            sql = "SELECT * FROM User WHERE User.id = ?";
+            sql = "SELECT * FROM User WHERE Email LIKE ?";
             prSt = conn.prepareStatement(sql);
             
             // Insert parameters into SQL Statement
@@ -56,7 +56,6 @@ public class CustomerDAO {
             
             // Get customer data queried from database
             
-            String email = "";
             String password = "";
             String avatarLink = "";
             String address = "";
@@ -74,7 +73,20 @@ public class CustomerDAO {
         return null;
     }
     
-    public boolean updateCustomer(int id, Customer customer){
+    public boolean updateCustomer(String email, Customer customer){
+        try{
+          
+            String sql = "UPDATE User SET ";
+            prSt = conn.prepareStatement(sql);
+            
+            // Add Parameter to the SQL Statement
+            
+            prSt.executeUpdate();
+            return true;
+            
+        }catch(Exception e){
+            
+        }
         return false;
     }
     

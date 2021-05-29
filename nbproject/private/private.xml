@@ -7,8 +7,13 @@
             <file>file:/C:/Users/Dang%20Minh%20Quan/Documents/NetBeansProjects/SWP391-Capstone/src/java/dto/Role.java</file>
             <file>file:/C:/Users/Dang%20Minh%20Quan/Documents/NetBeansProjects/SWP391-Capstone/src/java/dto/User.java</file>
             <file>file:/C:/Users/Dang%20Minh%20Quan/Documents/NetBeansProjects/SWP391-Capstone/src/java/dto/Customer.java</file>
-            <file>file:/C:/Users/Dang%20Minh%20Quan/Documents/NetBeansProjects/SWP391-Capstone/src/java/dto/Admin.java</file>
+            <file>file:/C:/Users/Dang%20Minh%20Quan/Documents/NetBeansProjects/SWP391-Capstone/src/java/dto/Order.java</file>
             <file>file:/C:/Users/Dang%20Minh%20Quan/Documents/NetBeansProjects/SWP391-Capstone/src/java/dto/Product.java</file>
+            <file>file:/C:/Users/Dang%20Minh%20Quan/Documents/NetBeansProjects/SWP391-Capstone/src/java/dto/OrderItem.java</file>
+            <file>file:/C:/Users/Dang%20Minh%20Quan/Documents/NetBeansProjects/SWP391-Capstone/src/java/dao/CustomerDAO.java</file>
+            <file>file:/C:/Users/Dang%20Minh%20Quan/Documents/NetBeansProjects/SWP391-Capstone/src/java/dto/Admin.java</file>
+            <file>file:/C:/Users/Dang%20Minh%20Quan/Documents/NetBeansProjects/SWP391-Capstone/src/java/utils/DbConnect.java</file>
+            <file>file:/C:/Users/Dang%20Minh%20Quan/Documents/NetBeansProjects/SWP391-Capstone/src/java/controller/MainController.java</file>
             <file>file:/C:/Users/Dang%20Minh%20Quan/Documents/NetBeansProjects/SWP391-Capstone/src/java/dto/Marketing.java</file>
             <file>file:/C:/Users/Dang%20Minh%20Quan/Documents/NetBeansProjects/SWP391-Capstone/src/java/dto/Category.java</file>
         </group>
