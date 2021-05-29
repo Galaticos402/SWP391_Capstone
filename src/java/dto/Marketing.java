@@ -10,5 +10,10 @@ package dto;
  * @author Dang Minh Quan
  */
 public class Marketing extends User {
+
+    public Marketing() {
+        super();
+        super.setRole(new Role());
+    }
     
 }

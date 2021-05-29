@@ -5,10 +5,25 @@
  */
 package dto;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author Dang Minh Quan
  */
 public class Customer extends User {
+
+    public Customer() {
+        super();
+        super.setRole(new Role());
+    }
+
+    public Customer(String email, String password, String avatarLink, String address, String fullName, String phoneNumber, String gender, LocalDate creationDate, boolean status) {
+        super(email, password, avatarLink, address, fullName, phoneNumber, gender, creationDate, status);
+        super.setRole(new Role());
+    }
+    
+    
+    
     
 }

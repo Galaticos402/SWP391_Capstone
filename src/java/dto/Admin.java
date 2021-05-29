@@ -10,5 +10,11 @@ package dto;
  * @author Dang Minh Quan
  */
 public class Admin extends User {
+
+    public Admin() {
+        super();
+        super.setRole(new Role());
+    }
+    
     
 }

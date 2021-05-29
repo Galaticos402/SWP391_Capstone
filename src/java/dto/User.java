@@ -27,7 +27,7 @@ public abstract class User {
         
     }
 
-    public User(String email, String password, String avatarLink, String address, String fullName, String phoneNumber, String gender, LocalDate creationDate, boolean status, Role role) {
+    public User(String email, String password, String avatarLink, String address, String fullName, String phoneNumber, String gender, LocalDate creationDate, boolean status) {
         this.email = email;
         this.password = password;
         this.avatarLink = avatarLink;
@@ -37,7 +37,6 @@ public abstract class User {
         this.gender = gender;
         this.creationDate = creationDate;
         this.status = status;
-        this.role = role;
     }
 
     public String getEmail() {
