@@ -11,6 +11,7 @@ import java.sql.ResultSet;
 import utils.DbConnect;
 import dto.Customer;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 /**
  *
@@ -33,11 +34,22 @@ public class CustomerDAO {
     
     public boolean createCustomer(Customer customer){
         try{
-            sql = "INSERT INTO User VALUES (?,?,?,?)";
-            prSt = conn.prepareStatement(sql);
+            sql = "INSERT INTO User VALUES (?,?,?,?,?,?,?,?,?,4)";
             
             // Insert parameters into SQL statement
             
+            prSt = conn.prepareStatement(sql);
+            prSt.setString(1, customer.getEmail());
+            prSt.setString(2, customer.getPassword());
+            prSt.setString(3, customer.getAvatarLink());
+            prSt.setString(4, customer.getAddress());
+            prSt.setString(5, customer.getFullName());
+            prSt.setString(6, customer.getPhoneNumber());
+            prSt.setString(7, customer.getGender());
+            prSt.setString(8, customer.getCreationDate().format(DateTimeFormatter.ofPattern("dd-MM-yyyy")));
+            prSt.setString(9, customer.getStatus());
+            
+            // Execute queries
             return prSt.execute();
         }catch(Exception e){
             e.printStackTrace();

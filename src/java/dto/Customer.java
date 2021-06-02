@@ -18,7 +18,7 @@ public class Customer extends User {
         super.setRole(new Role());
     }
 
-    public Customer(String email, String password, String avatarLink, String address, String fullName, String phoneNumber, String gender, LocalDate creationDate, boolean status) {
+    public Customer(String email, String password, String avatarLink, String address, String fullName, String phoneNumber, String gender, LocalDate creationDate, String status) {
         super(email, password, avatarLink, address, fullName, phoneNumber, gender, creationDate, status);
         super.setRole(new Role());
     }

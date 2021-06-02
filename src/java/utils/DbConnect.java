@@ -13,9 +13,9 @@ import java.sql.DriverManager;
  * @author Dang Minh Quan
  */
 public class DbConnect {
-    private String dbName = "";
-    private String username = "";
-    private String password = "";
+    private String dbName = "SWP391_ShoppingProject_SE1501";
+    private String username = "admin2";
+    private String password = "minhquan";
     
     public Connection makeConnection(){
         Connection connector ;
@@ -32,5 +32,11 @@ public class DbConnect {
             e.printStackTrace();
         }
         return null;
+    }
+    
+    public static void main(String[] args) {
+        DbConnect dbConnect = new DbConnect();
+        Connection conn = dbConnect.makeConnection();
+        System.out.println(conn);
     }
 }

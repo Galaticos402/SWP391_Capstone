@@ -20,14 +20,14 @@ public abstract class User {
     private String phoneNumber;
     private String gender;
     private LocalDate creationDate;
-    private boolean status;
+    private String status;
     private Role role;
 
     public  User() {
         
     }
 
-    public User(String email, String password, String avatarLink, String address, String fullName, String phoneNumber, String gender, LocalDate creationDate, boolean status) {
+    public User(String email, String password, String avatarLink, String address, String fullName, String phoneNumber, String gender, LocalDate creationDate, String status) {
         this.email = email;
         this.password = password;
         this.avatarLink = avatarLink;
@@ -103,11 +103,11 @@ public abstract class User {
         this.creationDate = creationDate;
     }
 
-    public boolean isStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(boolean status) {
+    public void setStatus(String status) {
         this.status = status;
     }
 

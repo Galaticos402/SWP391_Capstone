@@ -10,23 +10,23 @@ package dto;
  * @author Dang Minh Quan
  */
 public class Role {
-    private int id;
+    private String id;
     private String Name;
 
     public Role() {
         
     }
 
-    public Role(int id, String Name) {
+    public Role(String id, String Name) {
         this.id = id;
         this.Name = Name;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
